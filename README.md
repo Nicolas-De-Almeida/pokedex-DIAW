@@ -4,6 +4,10 @@ Uma Pokédex interativa desenvolvida com **React + Vite**, inspirada no universo
 
 O projeto tem como objetivo reunir informações sobre diferentes Pokémon em uma interface dinâmica e intuitiva, explorando conceitos de desenvolvimento frontend, componentização e interatividade com React.
 
+Responsáveis:
+Samuel Henrique Alvarenga e Lopes
+Nicolas de ALmeida
+
 ---
 
 ## ✨ Sobre o projeto

@@ -38,7 +38,7 @@ export default function ComparePanel({ pair, onClose }) {
             const other = index === 0 ? b : a
             return (
               <div key={p.id} className="compare__column">
-                <PokemonImage pokemon={p} className="compare__image"/>
+                <PokemonImage pokemon={p} className="compare__image" />
                 <span className="details__id">{formatId(p.id)}</span>
                 <h3>{p.name}</h3>
                 <div className="compare__types">
@@ -53,7 +53,8 @@ export default function ComparePanel({ pair, onClose }) {
                     icon={stat.icon}
                     value={p.stats[stat.key]}
                     compareValue={other.stats[stat.key]}
-                    color={TYPE_COLORS[p.types[0].name]}/>
+                    color={TYPE_COLORS[p.types[0].name]}
+                  />
                 ))}
                 <p className="details__total">
                   Total: <strong>{totalStats(p)}</strong>

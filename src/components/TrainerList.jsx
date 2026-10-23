@@ -20,10 +20,11 @@ export default function TrainerList({ trainers, pokemonById, onSelectPokemon }) 
             placeholder="Pesquisar treinador..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            aria-label="Pesquisar treinador"/>
+            aria-label="Pesquisar treinador"
+          />
         </div>
         <label className="filters__sort">
-          Ordenar por
+          📊 Ordenar por
           <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
             <option value="badges">Insígnias</option>
             <option value="name">Nome</option>
@@ -42,7 +43,8 @@ export default function TrainerList({ trainers, pokemonById, onSelectPokemon }) 
               key={trainer.id}
               trainer={trainer}
               pokemon={trainer.pokemonIds.map((id) => pokemonById[id]).filter(Boolean)}
-              onSelectPokemon={onSelectPokemon}/>
+              onSelectPokemon={onSelectPokemon}
+            />
           ))}
         </div>
       )}

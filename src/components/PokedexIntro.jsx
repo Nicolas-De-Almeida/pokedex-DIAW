@@ -53,14 +53,15 @@ export default function PokedexIntro({ total, onFinish }) {
           onClick={open}
           role="button"
           tabIndex={phase === 'idle' ? 0 : -1}
-          aria-label="Abrir Pokédex">
+          aria-label="Abrir Pokédex"
+        >
           {/* Metade esquerda: tela principal e controles */}
           <div className="dex__body">
             <div className="dex__top">
-              <span className="dex__lens"/>
-              <span className="dex__led dex__led--red"/>
-              <span className="dex__led dex__led--yellow"/>
-              <span className="dex__led dex__led--green"/>
+              <span className="dex__lens" />
+              <span className="dex__led dex__led--red" />
+              <span className="dex__led dex__led--yellow" />
+              <span className="dex__led dex__led--green" />
             </div>
 
             <div className="dex__screen-frame">
@@ -71,7 +72,7 @@ export default function PokedexIntro({ total, onFinish }) {
               <div className={`dex__screen ${screenOn ? 'is-on' : ''}`}>
                 {screenOn && (
                   <>
-                    <img src={spriteUrl(25)} alt="" className="dex__screen-sprite"/>
+                    <img src={spriteUrl(25)} alt="" className="dex__screen-sprite" />
                     <strong>POKÉDEX</strong>
                     <small>{total} registrados</small>
                     <div className="dex__progress">
@@ -81,38 +82,38 @@ export default function PokedexIntro({ total, onFinish }) {
                 )}
               </div>
               <div className="dex__screen-bottom">
-                <span className="dex__mini-led"/>
-                <span className="dex__speaker"/>
+                <span className="dex__mini-led" />
+                <span className="dex__speaker" />
               </div>
             </div>
 
             <div className="dex__controls">
-              <span className="dex__round-btn"/>
+              <span className="dex__round-btn" />
               <div className="dex__pills">
-                <span className="dex__pill dex__pill--red"/>
-                <span className="dex__pill dex__pill--blue"/>
+                <span className="dex__pill dex__pill--red" />
+                <span className="dex__pill dex__pill--blue" />
               </div>
-              <span className="dex__dpad"/>
-              <span className="dex__mini-screen"/>
+              <span className="dex__dpad" />
+              <span className="dex__mini-screen" />
             </div>
           </div>
 
-          <span className="dex__hinge"/>
+          <span className="dex__hinge" />
 
           {/* Tampa: frente vermelha; ao abrir, o verso vira a metade direita */}
           <div className="dex__cover">
             <div className="dex__cover-front">
               <svg className="dex__groove" viewBox="0 0 100 145" preserveAspectRatio="none" aria-hidden="true">
-                <path d="M0 34 H48 L60 24 H100"/>
+                <path d="M0 34 H48 L60 24 H100" />
               </svg>
               <div className="dex__top">
-                <span className="dex__lens"/>
-                <span className="dex__led dex__led--red"/>
-                <span className="dex__led dex__led--yellow"/>
-                <span className="dex__led dex__led--green"/>
+                <span className="dex__lens" />
+                <span className="dex__led dex__led--red" />
+                <span className="dex__led dex__led--yellow" />
+                <span className="dex__led dex__led--green" />
               </div>
               <span className="dex__label">POKéDEX</span>
-              <span className="dex__triangle"/>
+              <span className="dex__triangle" />
             </div>
 
             <div className="dex__cover-back">
@@ -130,12 +131,12 @@ export default function PokedexIntro({ total, onFinish }) {
                 ))}
               </div>
               <div className="dex__white-btns">
-                <span/>
-                <span/>
+                <span />
+                <span />
               </div>
               <div className="dex__black-screens">
-                <span/>
-                <span/>
+                <span />
+                <span />
               </div>
             </div>
           </div>
@@ -143,7 +144,7 @@ export default function PokedexIntro({ total, onFinish }) {
 
         <div className="intro__actions">
           <button className="intro__open" onClick={open} disabled={phase !== 'idle'}>
-            ▶️ Abrir Pokédex
+            ▶ Abrir Pokédex
           </button>
           <small>ou pressione Enter</small>
         </div>

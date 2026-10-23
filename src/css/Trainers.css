@@ -1,0 +1,125 @@
+.trainers__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.trainers__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.trainer-card {
+  padding: 18px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  animation: card-in 0.4s ease-out both;
+}
+
+.trainer-card__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.trainer-card__avatar {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border: 4px solid #222;
+  border-radius: 50%;
+  background: linear-gradient(var(--red) 50%, #fff 50%);
+  color: #222;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-shadow: 0 0 4px #fff, 0 0 4px #fff;
+}
+
+.trainer-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.trainer-card__badges {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.trainer-card__medals {
+  display: block;
+  font-size: 0.9rem;
+  letter-spacing: -2px;
+}
+
+.trainer-card__team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trainer-card__team button {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  width: 100%;
+  height: 100%;
+  padding: 8px 4px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: var(--surface-2);
+  transition: transform 0.15s, border-color 0.2s;
+}
+
+.trainer-card__team button:hover {
+  transform: translateY(-3px);
+  border-color: var(--red);
+}
+
+.trainer-card__team img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.trainer-card__team strong {
+  font-size: 0.85rem;
+}
+
+.trainer-card__poke-id {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.trainer-card__poke-types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px;
+}
+
+.trainer-card__poke-types .type-badge--small {
+  padding: 2px 6px;
+  font-size: 0.65rem;
+}
+
+@media (max-width: 420px) {
+  .trainers__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trainer-card__team img {
+    width: 52px;
+    height: 52px;
+  }
+}

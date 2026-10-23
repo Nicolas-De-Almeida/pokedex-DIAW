@@ -2,7 +2,6 @@ import TypeBadge from './TypeBadge'
 import PokemonImage from './PokemonImage'
 import { STATS, TYPE_COLORS, formatId } from '../utils/pokemon'
 import '../css/PokemonCard.css'
-import { Star } from  'lucide-react';
 
 export default function PokemonCard({ pokemon, isFavorite, isComparing, onSelect, onToggleFavorite, onToggleCompare }) {
   const mainColor = TYPE_COLORS[pokemon.types[0].name]
@@ -24,7 +23,8 @@ export default function PokemonCard({ pokemon, isFavorite, isComparing, onSelect
             onClick={(e) => {
               e.stopPropagation()
               onToggleCompare(pokemon.id)
-            }}>
+            }}
+          >
             ⚔️
           </button>
           <button
@@ -33,8 +33,9 @@ export default function PokemonCard({ pokemon, isFavorite, isComparing, onSelect
             onClick={(e) => {
               e.stopPropagation()
               onToggleFavorite(pokemon.id)
-            }}>
-            {isFavorite ? '⭐' : <Star size={3}/>}
+            }}
+          >
+            {isFavorite ? '⭐' : '☆'}
           </button>
         </div>
       </div>

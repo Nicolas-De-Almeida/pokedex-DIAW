@@ -12,6 +12,7 @@ export default function PokemonImage({ pokemon, className }) {
       src={sources[attempt]}
       alt={pokemon.name}
       loading="lazy"
-      onError={() => setAttempt((a) => Math.min(a + 1, sources.length - 1))}/>
+      onError={() => setAttempt((a) => Math.min(a + 1, sources.length - 1))}
+    />
   )
 }

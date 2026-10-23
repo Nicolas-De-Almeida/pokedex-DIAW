@@ -9,10 +9,11 @@ export default function SearchBar({ value, onChange }) {
         placeholder="Pesquisar Pokémon por nome ou ID..."
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        aria-label="Pesquisar Pokémon"/>
+        aria-label="Pesquisar Pokémon"
+      />
       {value && (
         <button className="search-bar__clear" onClick={() => onChange('')} aria-label="Limpar pesquisa">
-          X
+          ✕
         </button>
       )}
     </div>

@@ -27,7 +27,8 @@ export default function PokemonList({ pokemon, favorites, compareIds, onSelect, 
             isComparing={compareIds.includes(p.id)}
             onSelect={onSelect}
             onToggleFavorite={onToggleFavorite}
-            onToggleCompare={onToggleCompare}/>
+            onToggleCompare={onToggleCompare}
+          />
         ))}
       </div>
     </>

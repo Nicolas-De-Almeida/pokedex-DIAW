@@ -41,15 +41,17 @@ export default function Filters({
       <div className="filters__types" role="group" aria-label="Filtrar por tipo">
         <button
           className={`type-chip ${selectedType === 'All' ? 'is-active' : ''}`}
-          onClick={() => onSelectType('All')}>
-          Todos
+          onClick={() => onSelectType('All')}
+        >
+          🌈 Todos
         </button>
         {types.map((type) => (
           <button
             key={type}
             className={`type-chip ${selectedType === type ? 'is-active' : ''}`}
             style={{ '--chip-color': TYPE_COLORS[type] }}
-            onClick={() => onSelectType(selectedType === type ? 'All' : type)}>
+            onClick={() => onSelectType(selectedType === type ? 'All' : type)}
+          >
             {TYPE_ICONS[type]} {type}
           </button>
         ))}
@@ -57,7 +59,7 @@ export default function Filters({
 
       <div className="filters__actions">
         <label className="filters__sort">
-          Ordenar por
+          📊 Ordenar por
           <select value={sortBy} onChange={(e) => onSortBy(e.target.value)}>
             {SORT_OPTIONS.map((opt) => (
               <option key={opt.value} value={opt.value}>

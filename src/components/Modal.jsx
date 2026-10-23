@@ -20,9 +20,10 @@ export default function Modal({ onClose, children, labelledBy }) {
         role="dialog"
         aria-modal="true"
         aria-labelledby={labelledBy}
-        onClick={(e) => e.stopPropagation()}>
+        onClick={(e) => e.stopPropagation()}
+      >
         <button className="modal__close" onClick={onClose} aria-label="Fechar">
-          X
+          ✕
         </button>
         {children}
       </div>

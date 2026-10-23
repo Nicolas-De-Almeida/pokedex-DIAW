@@ -4,7 +4,7 @@ export default function Header({ view, onChangeView, theme, onToggleTheme, total
   return (
     <header className="header">
       <div className="header__brand">
-        <img src="/pokeball.svg" alt="" className="header__logo"/>
+        <img src="/pokeball.svg" alt="" className="header__logo" />
         <div>
           <h1>Pokédex</h1>
           <p>

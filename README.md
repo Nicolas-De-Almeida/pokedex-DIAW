@@ -37,11 +37,11 @@ A aplicação é desenvolvida como uma atividade acadêmica, com foco na aplica�
 📦 pokedex
  ┣ 📂 public
  ┣ 📂 src
- ┃ ┣ 📂 assets
  ┃ ┣ 📂 components
+ ┃ ┣ 📂 css
  ┃ ┣ 📂 data
+ ┃ ┣ 📂 services
  ┃ ┣ 📜 App.jsx
- ┃ ┣ 📜 App.css
  ┃ ┣ 📜 index.css
  ┃ ┗ 📜 main.jsx
  ┣ 📜 index.html
